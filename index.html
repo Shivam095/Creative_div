@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Creative Div</title>
+</head>
+<body>
+</body>
+<style type="text/css" media="all">
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+  }
+  .square{
+    position: relative;
+    height: 280px;
+    width: 280px;
+    background: #000000;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   color: white;
+  }
+  .content{
+    color: white;
+    font-size: 13px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 50%;
+    position: relative;
+    z-index: 100;
+    margin-top: 20px;
+  }
+  .content h2{
+    font-weight: 600;
+    margin-bottom: 7px;
+  }
+  .content a{
+    display: inline-block;
+    margin: 13px 30px;
+    text-decoration: none;
+    color: white;
+    outline: none;
+    font-weight: 600;
+    padding: 5px 5px;
+    height: 33px;
+    width: 90px;
+    border: 2px solid white;
+    border-radius: 70% 27% 44% 56% / 49% 44% 56% 51%;
+    
+  }
+  .content a:hover{
+    color: black;
+    background: #fff;
+  }
+  .square span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    animation: animate 6s linear infinite;
+  }
+  .square:hover span:nth-child(1){
+    background: #002DFFCC;
+    border: none;
+  }
+  .square span:nth-child(2){
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fff;
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  transform: rotate(30deg);
+  animation: animate 4s linear infinite;
+  }
+  .square:hover span:nth-child(2){
+    background: #002DFFDE;
+    border: none;
+  }
+  .square span:nth-child(3){
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fff;
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  transform: rotate(60deg);
+  animation: animate2 2s linear infinite;
+  }
+  .square:hover span:nth-child(3){
+    background: #002DFFCF;
+    border: none;
+  }
+  .square span:nth-child(4){
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fff;
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  transform: rotate(90deg);
+  animation: animate2 10s linear infinite;
+  }
+  .square:hover span:nth-child(4){
+    background: #002DFF;
+    border: none;
+  }
+  @keyframes animate{
+    0%{
+      transform: rotate(360deg);
+    }
+    100%{
+      transform: rotate(0deg);
+    }
+  
+  }
+  @keyframes animate2{
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  
+  }
+</style>
+  <div class="square">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <div class="content">
+      <h2>Google</h2>
+      <p>Google LLC is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, a search engine, cloud computing, software, and hardware. </p>
+      <a class="read-more" href="#">Read more</a>
+    </div>
+   </div>
+</html>
